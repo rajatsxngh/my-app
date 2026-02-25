@@ -4,3 +4,5 @@ function greet(name) {
 }
 
 document.getElementById('app').textContent = greet('World');
+
+document.getElementById('footer').textContent = `Copyright \u00A9 ${new Date().getFullYear()}`;
