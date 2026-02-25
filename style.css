@@ -1,9 +1,40 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    color: #2d3748;
+    line-height: 1.6;
 }
+
+main {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
-    color: #333;
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+p {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+}
+
+#app {
+    font-size: 1.1rem;
+    color: #2d3748;
+    padding: 16px;
+    background-color: #f7fafc;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
 }
