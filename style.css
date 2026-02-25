@@ -1,3 +1,18 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    margin: -20px -20px 20px -20px;
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
 body {
     font-family: sans-serif;
     max-width: 800px;
