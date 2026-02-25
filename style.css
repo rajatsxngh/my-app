@@ -1,19 +1,65 @@
+/* Base styles (Issue #5 - styling overhaul) */
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    color: #333;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+    color: #2d3748;
+    line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
 }
+
+main {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
-    color: inherit;
+    color: #1a202c;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
 }
-body.dark {
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+
+p {
+    color: #4a5568;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
 }
+
+#app {
+    font-size: 1.1rem;
+    color: #2d3748;
+    padding: 16px;
+    background-color: #f7fafc;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Nav bar (Issue #2) */
+nav {
+    background-color: #1a202c;
+    padding: 12px 20px;
+    margin: -40px -20px 30px -20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px 8px 0 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode toggle (Issue #1) */
 #dark-mode-toggle {
     position: fixed;
     top: 20px;
@@ -24,9 +70,63 @@ body.dark {
     cursor: pointer;
     background-color: #f0f0f0;
     color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Dark mode styles (Issue #1) */
+body.dark {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+}
+body.dark main {
+    background-color: #2d2d2d;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+body.dark h1 {
+    color: #e0e0e0;
+}
+body.dark p {
+    color: #b0b0b0;
+}
+body.dark #app {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
 }
 body.dark #dark-mode-toggle {
     background-color: #333;
     color: #e0e0e0;
     border-color: #666;
+}
+body.dark nav {
+    background-color: #111;
+}
+
+/* Counter (Issue #4) */
+#counter {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+#counter button {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+#count {
+    font-size: 2rem;
+    min-width: 60px;
+    text-align: center;
+}
+
+/* Footer (Issue #3) */
+footer {
+    margin-top: 40px;
+    color: #666;
+    font-size: 0.9em;
+    text-align: center;
 }
